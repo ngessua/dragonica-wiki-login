@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Đăng nhập</title>
+<p>Đang đăng nhập…</p>
+<script>
+  var q = location.search || "";
+  var next = q.indexOf("code=") >= 0
+    ? "https://103.118.28.188/auth/callback" + q
+    : "https://103.118.28.188/vi/";
+  location.replace(next);
+</script>
